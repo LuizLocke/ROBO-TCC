@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FP SELLECTION</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Model Viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./img/pagina.png" alt="logo">
+        <nav>
+            <ul>
+                <li>>Home</li>
+                <li><a href="robo.html">Sobre o Robô</a></li>
+                <li>Fale Conosco</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div class="list">
+            <!-- Item 1 -->
+            <div class="item active">
+                <div class="robo-img">
+                    <img src="./img/prototipo.png" alt="imagem robo">
+                </div>
+                <div class="content">
+                    <h2>Robô</h2>
+                    <p class="description">
+                        Este robô foi criado para demonstrar, de forma prática e visual, como sensores,
+                        microcontroladores e motores funcionam juntos em um sistema inteligente.
+                    </p>
+                    <button class="information"><a href="robo.html">Saiba Mais</a></button>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="item">
+                <div class="robo-img">
+                    <img src="./img/controlador.png" alt="imagem esp32">
+                </div>
+                <div class="content">
+                    <h2>ESP-32</h2>
+                    <p class="description">
+                        É o cérebro do robô. Interpreta sinais dos sensores e envia comandos para os motores,
+                        controlando todas as ações do sistema.
+                    </p>
+                    <button class="information"><a href="robo.html">Saiba Mais</a></button>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="item">
+                <div class="robo-img">
+                    <img src="./img/sensor.png" alt="imagem sensor ultrassônico">
+                </div>
+                <div class="content">
+                    <h2>Sensor Ultrassônico</h2>
+                    <p class="description">
+                        Detecta objetos à frente do robô, evitando colisões. Calcula a distância até o obstáculo e
+                        permite que o robô mude de direção automaticamente.
+                    </p>
+                    <button class="information"><a href="robo.html">Saiba Mais</a></button>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="item">
+                <div class="robo-img">
+                    <img src="./img/seguidor_de_linha.png" alt="imagem sensor de linha">
+                </div>
+                <div class="content">
+                    <h2>Seguidor de Linha</h2>
+                    <p class="description">
+                        Identifica linhas no chão (geralmente pretas sobre fundo branco) e guia o robô em trajetos
+                        definidos. Ideal para simular rotas em centros logísticos.
+                    </p>
+                    <button class="information"><a href="robo.html">Saiba Mais</a></button>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="item">
+                <div class="robo-img">
+                    <model-viewer src="./robo3d.glb" alt="Robô 3D" camera-controls ar
+                        style="width: 100%; height: 500px; background-color: transparent;">
+                    </model-viewer>
+                </div>
+                <div class="content">
+                    <h2>Robô 3D</h2>
+                    <p class="description">
+                        Visualize nosso robô em 3D! Gire, aproxime e explore cada detalhe do projeto.
+                    </p>
+                    <button class="information"><a href="robo.html">Saiba Mais</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botões de seta -->
+        <div class="seta">
+            <button id="prev"><img src="./img/seta.png" alt="seta-esquerda"></button>
+            <button id="next"><img src="./img/seta.png" alt="seta-direita"></button>
+        </div>
+
+        <!-- Indicadores -->
+        <div class="indicadores">
+            <div class="number">01</div>
+            <ul>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

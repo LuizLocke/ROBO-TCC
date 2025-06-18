@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações do Robô</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="./img/pagina.png" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active">>Sobre o Robô</li>
+                <li>Fale Conosco</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Sobre o Robô</h1>
+
+        <div class="info">
+            <h2>Robô</h2>
+            <p>
+                Este robô foi desenvolvido com foco em aplicações logísticas, como centros de distribuição e organização
+                de estoques. Ele simula, de forma prática, como sensores e microcontroladores podem ser usados para
+                automatizar tarefas, otimizar processos e aumentar a eficiência em ambientes logísticos. Sua estrutura
+                aberta permite visualizar os componentes internos, sendo ideal também para fins educacionais e
+                apresentações técnicas.
+            </p>
+        </div>
+
+        <div class="info">
+            <h2>ESP-32</h2>
+            <p>
+                O ESP32 é um microcontrolador avançado e moderno que substitui, em muitos casos, o tradicional Arduino.
+                Ele possui um processador dual-core de 32 bits, clock de até 240 MHz e memória RAM interna. Seu grande
+                diferencial é o suporte nativo a Wi-Fi e Bluetooth, o que permite conectar o robô a aplicativos móveis,
+                rede local ou até à internet.
+
+                Além disso, o ESP32 possui várias portas de entrada/saída digitais e analógicas (GPIOs), suporta
+                comunicação via I2C, SPI, UART, PWM, ADC, entre outros, o que o torna extremamente versátil para
+                robótica e projetos IoT (Internet das Coisas).
+
+                Resumo: Controlador principal do robô. Interpreta sensores, controla motores e pode se conectar a
+                redes.
+
+
+            </p>
+        </div>
+
+        <div class="info">
+            <h2>Sensor Ultrassônico</h2>
+            <p>
+                O sensor ultrassônico HC-SR04 é um dos mais utilizados em robótica para medir distância e evitar
+                colisões. Ele funciona emitindo ondas ultrassônicas que se refletem nos objetos e retornam ao sensor. A
+                partir do tempo de resposta, é possível calcular a distância com precisão.
+
+                Faixa de detecção: 2 cm a 400 cm
+                Precisão: ± 3 mm
+
+                Utilidade no robô: Detecta obstáculos à frente, permitindo ao robô parar, desviar ou recalcular rota.
+
+
+
+            </p>
+        </div>
+
+        <div class="info">
+            <h2>Sensor Seguidor de Linha</h2>
+            <p>
+                Esse sensor é usado para detectar linhas no chão, geralmente pretas sobre fundo branco (ou o inverso).
+                Ele emite luz infravermelha e detecta a reflexão da superfície. Superfícies claras refletem mais,
+                enquanto as escuras refletem menos.
+
+                Geralmente os módulos possuem 2 ou 3 sensores IR para permitir um controle direcional preciso (esquerda,
+                centro, direita).
+
+                Utilidade no robô: Permite que o robô siga uma rota pré-definida, como uma linha preta no chão, usada em
+                circuitos logísticos simulados.
+
+            </p>
+        </div>
+
+        <div class="info">
+            <h2>Filamento PETG</h2>
+            <p>
+                O filamento PETG (Polietileno Tereftalato Glicol) é um dos materiais mais utilizados na impressão 3D.
+                Ele é um meio-termo entre PLA e ABS, combinando resistência térmica, mecânica e flexibilidade.
+
+                Características:
+
+                Alta resistência a impactos e à água
+
+                Boa aderência entre camadas
+
+                Não tóxico (pode ser usado em ambientes escolares)
+
+                Temperatura de impressão: 230–250°C
+
+                Utilidade no robô: Utilizado para imprimir a estrutura do chassi, suportes de sensor, rodas, e peças
+                mecânicas do robô com resistência e precisão.
+
+            </p>
+        </div>
+
+        <div class="info">
+            <h2>Driver de Motor L298N</h2>
+            <p>
+                O L298N é um módulo controlador de motores baseado em um CI duplo ponte H. Ele permite controlar até 2
+                motores DC ou 1 motor de passo de forma independente. O módulo recebe sinais do ESP32 ou Arduino e
+                modula a velocidade e direção dos motores usando PWM (modulação por largura de pulso).
+
+                Tensão de entrada: 5V–35V
+                Corrente por canal: até 2A (com dissipador)
+
+                Utilidade no robô: Faz a interface entre o controlador (ESP32) e os motores, permitindo o movimento do
+                robô para frente, trás, curvas e paradas suaves.
+
+
+            </p>
+        </div>
+
+        <div class="info">
+            <h2>2 Motores DC com Caixa de Redução (6V – 120 RPM)</h2>
+            <p>
+                Os motores DC com caixa de redução são ideais para robôs móveis. A caixa de redução diminui a velocidade
+                e aumenta o torque, o que é essencial para movimentar cargas com estabilidade.
+
+                Características recomendadas:
+
+                Tensão: 6V
+
+                Velocidade: ~120 RPM
+
+                Torque suficiente para carregar estrutura leve
+
+                Eixo compatível com rodas plásticas padrão
+
+                Utilidade no robô: São responsáveis pela locomoção do robô, controlando sua velocidade e direção.
+                Podem ser conectados diretamente ao L298N.
+
+            </p>
+        </div>
+
+        <div class="info">
+            <h2>Power Bank (Fonte de Energia)</h2>
+            <p>
+                O Power Bank é uma solução prática e segura para alimentar projetos de robótica, especialmente em
+                protótipos. Ele fornece 5V via USB, o que é compatível com o ESP32, Arduino, módulos sensores e, com
+                adaptação, até motores pequenos.
+
+                Vantagens:
+
+                Fácil recarregamento via cabo
+
+                Proteção contra sobrecarga
+
+                Elimina necessidade de soldar baterias ou usar fonte de bancada
+
+                Utilidade no robô: Alimenta o sistema com segurança, praticidade e mobilidade. Ideal para
+                apresentações escolares ou protótipos.
+
+
+            </p>
+        </div>
+    </main>
+
+</body>
+
+</html>

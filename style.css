@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+header img {
+    width: 250px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 60px;
+}
+
+header nav ul li a {
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #beff1b;
+}
+
+.container {
+    padding-top: 150px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container h1 {
+    font-size: 4rem;
+    margin-bottom: 40px;
+    font-family: "League Gothic", sans-serif;
+    color: #beff1b;
+    border-bottom: 2px solid #beff1b;
+    padding-bottom: 10px;
+}
+
+.info {
+    margin-bottom: 40px;
+}
+
+.info h2 {
+    font-size: 2rem;
+    color: #beff1b;
+    margin-bottom: 10px;
+    font-family: "League Gothic", sans-serif;
+}
+
+.info p {
+    color: #d9d9d9;
+    line-height: 1.6;
+    max-width: 900px;
+    font-size: 1.3em;
+}
